@@ -20,7 +20,7 @@
     <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
   <script>
-        var address = “your bitcoin address here“;
+        var address = “your bitcoin address here“
         var btcs = new WebSocket(‘wss://ws.blockchain.info/inv’);
           btcs.onopen = function(){
              btcs.send(JSON.stringify({“op”:”addr_sub”, “addr”:address}));
